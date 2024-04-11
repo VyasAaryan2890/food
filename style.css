@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px -8px 32px 0px rgb(0,0,0,0.4);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(244, 237, 228);
+}
+.header .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    box-shadow: 0px -8px 32px 0px rgba(0, 0, 0, 0.3);
+}
+.nav h1{
+    color: rgb(251, 116, 67);
+}
+.nav h1 span{
+    color: black;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul button{
+    font-size: 20px;
+    padding: 7px 25px;
+    background-color: transparent;
+    border: 2px solid coral;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 5px;
+}
+.nav ul button:hover{
+    background-color: coral;
+    color: #fff;
+    border-radius: 50px;
+}
+.nav ul li{
+    display: inline;
+   
+    padding: 20px 20px;
+}
+.nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+.nav ul li a:hover{
+    color: coral;
+}
+
+.hero{
+    
+    min-height: 90vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(244, 237, 228);
+}
+.main{
+    
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main .col1{
+    
+    width: 60%;
+    box-sizing: border-box;
+}
+.main .col1 h1{
+    font-size: 60px;
+    padding: 10px 10px;
+}
+.main .col1 h1 span{
+    color: coral;
+}
+.main .col1 p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.main .col1 button{
+    width: 30%;
+    padding: 15px 10px;
+    font-size: 20px;
+    background-color:transparent;
+    border: 2px solid coral;
+    transition: 1s;
+    border-radius: 5px;
+}
+.main .col1 button:hover{
+    background-color: coral;
+    color: #ffff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.main .col2{
+    box-sizing: border-box;
+}
+.main .col2 img{
+    width: 100%;
+    aspect-ratio: 3/3.7;
+    animation: float 3s linear infinite;
+    border-radius: 50%;
+}
+@keyframes float {
+    0%,100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(1rem);
+    }
+}
+
+
+.box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(2px);
+    display: none;
+
+}
+.unit{
+    border: 1px solid;
+    width: 350px;
+    margin: 150px auto;
+    text-align: center;
+    background-color: black;
+    padding: 30px 30px;
+    border-radius: 5px;
+    
+}
+.unit h1{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.unit p{
+    cursor: pointer;
+}
+.unit span{
+    color: coral;
+}
+.unit input{
+    width:100%;
+    padding: 15px 10px;
+    font-size: 20px;
+    margin: 10px auto;
+    outline:none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.unit button{
+    width:55%;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color:black;
+    color: coral;
+    font-weight: 600;
+    border: 1px solid coral;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.unit button:hover{
+    background-color: coral;
+    color: #fff;
+    border: 1px solid coral;
+}
+.nav ul p{
+    
+    display: none;
+}
+
+@media(min-width:300px)
+{
+    .main .col1 h1 {
+        font-size: 49px;
+        padding: 30px 10px;
+    }
+    .main .col1 p {
+        font-size: 15px;
+        padding-bottom: 28px;
+    }
+    .main .col1 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .main .col1 button {
+        width: 55%;
+        padding: 12px 9px;
+        font-size: 20px;
+        background-color: transparent;
+        border: 2px solid coral;
+        transition: 1s;
+        border-radius: 5px;
+    }
+    .nav ul {
+        list-style: none;
+        display:flex;
+        position: fixed;
+        flex-direction: column;
+        top:0;
+        right: -300px;
+        background-color: rgb(244, 237, 228);
+        min-height: 100vh;
+        box-shadow: 0px -8px 32px 0px rgba(0,0,0,0.2);
+        padding: 20px 20px;
+        transition: 1s;
+    }
+    .nav ul p{
+        font-size: 30px;
+        display: block;
+    }
+    .nav p{
+        font-size: 30px;
+        font-weight: 600;
+        color: coral;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <h1>Yummy <span>Food</span></h1>
+                <ul id="ul">
+                    <p id="c">X</p>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Speciality</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">Order</a></li>
+                    <button id="lb">Login</button>
+                </ul>
+                <p id="o">X</p>
+               
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="main">
+            <div class="col1">
+                <h1><span>Food Made</span> With Love</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet aspernatur architecto sed adipisci quibusdam libero maiores sequi id explicabo quas dolorem quae similique esse atque quo alias, dolores placeat exercitationem.
+                Nam accusantium expedita odit ab eveniet eligendi quas quisquam.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="col2">
+                <img src="Remove bg/2.png" alt="" width="100%">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="box" id="box">
+        <div class="unit">
+            <form>
+                <h1>
+                    <p>User<span> Login</span></p>
+                    <p id="close">X</p>
+                </h1>
+                <input type="text" placeholder="Username"required>
+                <input type="password" placeholder="Passwodr"required>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var lb = document.getElementById("lb");
+        var box = document.getElementById("box");
+        var close = document.getElementById("close");
+
+        var o =document.getElementById("o");
+        var c =document.getElementById("c");
+        var ul=document.getElementById("ul");
+
+        lb.addEventListener("click",()=>{
+            box.style.display="block";
+        });
+
+        close.addEventListener("click",()=>{
+            box.style.display="none";
+        });
+
+        o.addEventListener("click",()=>{
+            ul.style.right="0px";
+        });
+
+        c.addEventListener("click",()=>{
+            ul.style.right="-300px";
+        })
+    </script>
+</body>
+</html>
